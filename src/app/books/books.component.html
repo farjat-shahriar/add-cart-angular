@@ -1,0 +1,23 @@
+<h1 class="list">Programing book list!</h1>
+<!-- <button (click)="handleclick()" [disabled]="isdisable">Show Books</button> -->
+<!-- <input type="text" class="text" [(ngModel)]="my_name"/>
+<p>{{my_name}}</p> -->
+<!-- <button (click)="togglebooks()">
+ <ng-container *ngIf="!isShowing">Show Books</ng-container>
+ <ng-container *ngIf="isShowing">Hide Books</ng-container>
+</button> -->
+
+<ul class="header" *ngIf="isShowing">
+    <ng-container>
+    <li *ngFor="let mybook of books; let i=index" >
+        <!-- <p>{{i+1}}</p>  -->
+        <!-- <img [src]="book.image" [alt]="book.name"
+            width="100">
+       <p class="title">{{book.name | titlecase }} by {{book.author | titlecase}}</p> 
+      <p class="currency"> {{book.price | currency}}</p> 
+      <button class="btn">Add to Cart</button> -->
+      <!-- <app-book (Bookemitter)="childInfo($event)" [book]="mybook"></app-book> -->
+      <app-book  [book]="mybook"></app-book>
+    </li>
+</ng-container>
+</ul>

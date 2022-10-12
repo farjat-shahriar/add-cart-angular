@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+li{
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    text-overflow: ellipsis;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800;
+    font-size: 35px;
+}

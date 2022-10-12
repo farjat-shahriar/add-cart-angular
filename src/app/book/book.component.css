@@ -1,0 +1,17 @@
+li{
+    margin-bottom: 20px;
+}
+.img{
+    padding-left: 30px;
+}
+.title{
+   margin: 10px;
+}
+.button{
+    background-color: chartreuse;
+    border-radius: 8px;
+}
+.button:hover{
+    background-color: yellow;
+    border-radius: 8px;
+}

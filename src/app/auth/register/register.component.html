@@ -1,0 +1,39 @@
+<div class="flex m-auto h-screen justify-center">
+    <form class="p-4 rounded-lg border" (ngSubmit)="submit()">
+       <h1 class="text-center text-xl">Register</h1>
+        <div  class="my-5 w-full">
+            <label for="email">Email</label>
+            <input type="email" class="p-2 rounded w-full" name="email" id="email" placeholder="Email Addrress"
+            [(ngModel)]="form.email" required>
+        </div>
+        <div  class="p-2 bg-red-300 text-red-800 rounded">
+            Email field must be valid
+        </div>
+
+        <div class="my-5 w-full">
+            <label for="password">Password</label>
+            <input type="password" class="p-2 rounded w-full" name="" id="password" placeholder="Password "
+            [(ngModel)]="form.password" required>
+        </div>
+        <div     class="p-2 bg-red-300 text-red-800 rounded">
+            Password field must be valid
+        </div>
+
+        <div class="my-5 w-full">
+            <label for="password">Confirm Password</label>
+            <input type="password" class="p-2 rounded w-full" name="" id="password" placeholder="confirm Password "
+            
+            [(ngModel)]="form.confirm_password"required>
+        </div>
+        <div  class="p-2 bg-red-300 text-red-800 rounded">
+           Confirm password field must be valid
+        </div>
+
+        <div class="my-5 w-full">
+           
+            <input type="submit" 
+             class="p-2 w-full bg-purple-800 text-white rounded" name="" id="password">
+        </div>
+
+    </form>
+</div>
